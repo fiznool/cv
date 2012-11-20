@@ -21,6 +21,16 @@
 		 			box-sizing: border-box;
 }
 
+p {
+	margin-bottom: 15px;
+}
+
+.screen-reader-text {
+	position: absolute;
+	top: -9999px;
+	left: -9999px;
+}
+
 .standout, .contact-icon {
 	color: #00aaaa;
 }
@@ -47,8 +57,6 @@
 	color: #444;
 }
 
-
-
 .contact-details {
 	line-height: 1.8em;
 }
@@ -61,17 +69,28 @@
 	margin-bottom: 10px;
 }
 
+.link-with-icon {
+	display: inline-block;
+	text-decoration: none;
+}
+
+.link-text {
+	text-decoration: underline;
+	padding-right: 5px;
+}
+
 .technologies .row {
 	margin: 10px 0;
 }
 
 .technologies .tech-title {
-	padding-bottom: 10px;
+	margin-bottom: 30px;
 }
 
 .technologies img {
 	width: 60%;
 	height: auto;
+	padding-top: 10px;
 }
 
 .technologies .full-width {

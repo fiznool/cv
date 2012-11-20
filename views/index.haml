@@ -6,71 +6,96 @@
   .one-third.column.contact-details
     .address 
       %span.icon-compass.contact-icon
+      %span.screen-reader-text Address
       26 Grove Park Avenue, Bristol
     .tel
       %span.icon-phone.contact-icon
+      %span.screen-reader-text Phone
       %a{:href => "tel:+447825345094"} 07825 345094
     .email
       %span.icon-envelope.contact-icon
+      %span.screen-reader-text Email
       %a{:href => "mailto:spencer.ts@gmail.com"} spencer.ts@gmail.com
     .twitter
       %span.icon-twitter.contact-icon
-      %a{:href => "http://twitter.com/fiznool"} @fiznool
+      %span.screen-reader-text Twitter
+      %a{:href => "http://twitter.com/fiznool", :target => "_blank"} @fiznool
     .blog
       %span.icon-comments.contact-icon
-      %a{:href => "http://fiznool.com"} fiznool.com
+      %span.screen-reader-text Blog
+      %a{:href => "http://fiznool.com", :target => "_blank"} fiznool.com
     .github
       %span.icon-github.contact-icon
-      %a{:href => "http://github.com/fiznool"} github.com/fiznool
+      %span.screen-reader-text Github
+      %a{:href => "http://github.com/fiznool", :target => "_blank", :target => "_blank"} github.com/fiznool
 %hr/
 #main.row
   .two-thirds.column.main-content
     %h3.standout Portfolio
     %p The following work is in the public domain. Other client work can be viewed on request.
-    %h4 SafariApps
-    %p A hybrid mobile application for safari adventurers.
+    %h4 
+      %a.link-with-icon{:href => "http://safariapps.heroku.com", :target => "_blank"}
+        %span.link-text SafariApps
+        %span.icon-mobile.standout
+        %span.screen-reader-text Link to live demo
+    %p A hybrid mobile application for safari adventurers. 
+    %ul.square
+      %li Project began with a wireframing session with the client.
+      %li 
+        This quickly moved onto a rapid prototype, built with Sinatra and Bootstrap. The prototype is
+        = succeed "," do
+          %a{:href => "http://safariapps-prototype.heroku.com", :target => "_blank"} hosted on Heroku
+        and the source code can be
+        %a{:href => "https://github.com/fiznool/SafariApps-Prototype", :target => "_blank"} viewed on Gitub.
+      %li 
+        Production app is currently in development; it is based on the
+        = succeed "." do
+          %a{:href => "https://github.com/fiznool/mobile-backbone-boilerplate", :target => "_blank"} 
+          Mobile Backbone Boilerplate library
+      %li Client is happy with the agile process: builds are regularly uploaded to Heroku for approval.
     %p
-      The project began with a wireframing session with the client, and then quickly moved onto a rapid prototype, built with
-      %a{:href => "http://www.sinatrarb.com/", :target => "_blank"} Sinatra
-      and
-      = succeed "." do
-        %a{:href => "http://twitter.github.com/bootstrap/", :target => "_blank"} Bootstrap
-      The prototype is
-      = succeed "," do
-        %a{:href => "http://safariapps-prototype.heroku.com", :target => "_blank"} hosted on Heroku
-      and the source code can be
-      %a{:href => "https://github.com/fiznool/SafariApps-Prototype", :target => "_blank"} viewed on Gitub.
-    %p
-      The production app is currently in development; it is based on the
-      %a{:href => "https://github.com/fiznool/mobile-backbone-boilerplate", :target => "_blank"} Mobile Backbone Boilerplate library
-      and will be deployed as a hybrid app with
-      = succeed "." do
-        %a{:href => "http://phonegap.com", :target => "_blank"} PhoneGap
-      The client is happy with the agile process, which involves regular builds being uploaded to Heroku for approval. The latest work-in-progress version of the app
+      The latest work-in-progress version of the app
       %a{:href => "http://safariapps.heroku.com", :target => "_blank"} can be seen here.
-    %h4 SweepBook
-    %p A Facebook app, developed with a friend to raise money for the 2011 Great North Run. App was built using Ruby on Rails and Twitter Bootstrap, and operates in standalone mode or is embedded within the Facebook chrome. Integrates with Facebook Graph API so that donators can be tagged and displayed on a donators page.
-    %p
+    %h4 
+      %a.link-with-icon{:href => "http://safariapps.heroku.com", :target => "_blank"}
+        %span.link-text SweepBook
+        %span.icon-monitor.standout
+        %span.screen-reader-text Link to live demo
+    %p A Facebook app, developed with a friend to raise money for the 2011 Great North Run.
+    %ul.square
+      %li App was built using Ruby on Rails and Twitter Bootstrap.
+      %li Operates in standalone mode or is embedded within the Facebook chrome. 
+      %li Integrates with Facebook Graph API so that donators can be tagged and displayed on a donators page.
+    %p 
       See the
-      %a{:href => "http://sweepbook.heroku.com/"} live app hosted on Heroku
+      %a{:href => "http://sweepbook.heroku.com/", :target => "_blank"} live app hosted on Heroku
       and
-      %a{:href => "https://github.com/joewoodhouse30/SweepBook"} browse the source code on Github.
+      %a{:href => "https://github.com/joewoodhouse30/SweepBook", :target => "_blank"} browse the source code on Github. 
     %h3.standout Libraries
     %p
       All libraries are open source and can be found on
       = succeed "." do
         %a{:href => "http://github.com/fiznool"} Github
     %h4
-      %a{:href => "https://github.com/fiznool/mobile-backbone-boilerplate", :target => "_blank"} Mobile Backbone Boilerplate
+      %a.link-with-icon{:href => "https://github.com/fiznool/mobile-backbone-boilerplate", :target => "_blank"} 
+        %span.link-text Mobile Backbone Boilerplate 
+        %span.icon-github.standout
+        %span.screen-reader-text Link to Github repository
     %p A fork of the popular Backbone Boilerplate library, aimed at mobile devices. Used to develop SafariApps.
     %h4
-      %a{:href => "https://github.com/fiznool/tappivate", :target => "_blank"} Tappivate
+      %a.link-with-icon{:href => "https://github.com/fiznool/tappivate", :target => "_blank"}
+        %span.link-text Tappivate
+        %span.icon-github.standout
+        %span.screen-reader-text Link to Github repository
     %p
       A jQuery/Zepto plugin to make mobile web buttons and list views feel a bit more 'native'. Featured in
       = succeed "." do
         %a{:href => "http://javascriptweekly.com/archive/100.html"} JavaScript Weekly issue 100
     %h4
-      %a{:href => "https://github.com/fiznool/oneliner", :target => "_blank"} OneLiner
+      %a.link-with-icon{:href => "https://github.com/fiznool/oneliner", :target => "_blank"}
+        %span.link-text One Liner
+        %span.icon-github.standout
+        %span.screen-reader-text Link to Github repository
     %p A jQuery/Zepto plugin to shrink text until it fits on one line. Developed for SafariApps to ensure that text in a mobile list view does not wrap to the next line.
     %h3.standout Community
     %h4 SWmobile
@@ -80,7 +105,9 @@
         %a{:href => "http://www.meetup.com/swmobile", :target => "_blank"} SWmobile meetup group
     %p With over 140 members, the group meets every 6-8 weeks to discuss mobile design and development. Currently Bristol-based, there are plans to expand the group to further afield in the South West.
     %h3.standout Experience
-    %h4 Senior Mobile Web Developer, Mubaloo Ltd.
+    %h4 
+      Senior Mobile Web Developer, 
+      %a{:href => "http://www.mubaloo.com", :target => "_blank"} Mubaloo
     %h5.experience-date January 2012 - Present
     %ul.square
       %li Deputy of the mobile web team; responsible for the development of browser-based and hybrid mobile web applications in a fast-paced agency environment.
@@ -90,7 +117,7 @@
       %li Introduced a new single-page web framework - Mobile Backbone Boilerplate - which is now the standard for all new client projects.
       %li Championed Agile methodologies resulting in adoption of user stories and rapid prototyping across the business.
     %h4 Co-founder, Isca Networks
-    %h5.experience-date November 2007 - November 2011
+    %h5.experience-date November 2007 - December 2011
     %ul.square
       %li Startup developing web-based touch screen kiosk hardware and software.
       %li Part of 4-strong agile development team creating product using web technologies.
@@ -104,11 +131,17 @@
     %ul.square
       %li Graduated with First class honours, second highest mark in year (82%).
   .one-third.column.technologies
-    %h3.standout Technologies
+    %h3.tech-title.standout Technologies
     .row
-      %h4.tech-title Front-End
       .full-width
         %img{:src => 'images/logos/html5_css3.png', :alt => 'HTML5 and CSS3 logo'}
+        .stars
+          %span.icon-star.standout
+          %span.icon-star.standout
+          %span.icon-star.standout
+    .row
+      .full-width
+        %img{:src => 'images/logos/compass.png', :alt => 'Compass logo'}
         .stars
           %span.icon-star.standout
           %span.icon-star.standout
@@ -123,6 +156,7 @@
       .half-width
         %img{:src => 'images/logos/phonegap.png', :alt => 'Phonegap logo'}
         .stars
+          %span.icon-star.standout
           %span.icon-star.standout
     .row
       .full-width
@@ -139,7 +173,6 @@
           %span.icon-star.standout
           %span.icon-star.standout
     .row
-      %h5 APIs
       .half-width
         %img{:src => 'images/logos/facebook.png', :alt => 'Facebook logo'}
         .stars
@@ -149,7 +182,6 @@
         .stars
           %span.icon-star.standout
     .row
-      %h5 Back-End
       .half-width
         %img{:src => 'images/logos/ruby.png', :alt => 'Ruby logo'}
         .stars
@@ -169,7 +201,6 @@
         .stars
           %span.icon-star.standout
     .row
-      %h5 Platforms
       .half-width
         %img{:src => 'images/logos/apple.png', :alt => 'Apple logo'}
         .stars
