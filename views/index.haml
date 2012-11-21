@@ -132,6 +132,22 @@
       %li Graduated with First class honours, second highest mark in year (82%).
   .one-third.column.technologies
     %h3.tech-title.standout Technologies
+    .row.key
+      .key-item.clearfix
+        .key-stars
+          %span.icon-star.standout
+        Familiar
+      .key-item.clearfix
+        .key-stars
+          %span.icon-star.standout
+          %span.icon-star.standout
+        Proficient
+      .key-item.clearfix
+        .key-stars
+          %span.icon-star.standout
+          %span.icon-star.standout
+          %span.icon-star.standout
+        Experienced
     .row
       .full-width
         %img{:src => 'images/logos/html5_css3.png', :alt => 'HTML5 and CSS3 logo'}
@@ -200,6 +216,7 @@
         %img{:src => 'images/logos/heroku.png', :alt => 'Heroku logo'}
         .stars
           %span.icon-star.standout
+          %span.icon-star.standout
     .row
       .half-width
         %img{:src => 'images/logos/apple.png', :alt => 'Apple logo'}
@@ -226,7 +243,9 @@
 %hr/
 %footer.footer.row
   .footer-credits
-    Copyright 2012 Tom Spencer. Source is 
+    Copyright 2012 Tom Spencer.
+  .footer-credits
+    Source is 
     = succeed "." do
       %a{:href => 'http://github.com/fiznool/cv'} available on Github
   .footer-credits

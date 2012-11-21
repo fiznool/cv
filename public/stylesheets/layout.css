@@ -83,14 +83,25 @@ p {
 	margin: 10px 0;
 }
 
-.technologies .tech-title {
-	margin-bottom: 30px;
-}
-
 .technologies img {
-	width: 60%;
 	height: auto;
 	padding-top: 10px;
+}
+
+.technologies .key {
+	margin: 10px 0 20px 0;
+}
+
+.technologies .key-item {
+	width: 100%;
+	display: block;
+}
+
+.technologies .key-stars {
+	float: left;
+	width: 5em;
+	text-align: right;
+	padding-right: 10px;
 }
 
 .technologies .full-width {
